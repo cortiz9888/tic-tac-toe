@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Chalkduster, fantasy; 
+}
+.container{
+    min-height: 100vh;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    cursor: pointer;
+    background: green;
+    color: white;
+}
+
+
+.game-spot {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: auto auto auto;
+}
+.block {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    transition: background 0.2s ease-in-out
+}
+.block:hover {
+    cursor: pointer;
+    background: lightgreen;
+}
+.occuppied:hover {
+    background: lightgreen;
+}
+#blockOne,
+#blockTwo,
+#blockThree{
+    border-top: none;
+}
+
+#blockOne,
+#blockFour,
+#blockSeven{
+    border-left: none;
+}
+
+#blockThree,
+#blockSix,
+#blockNine{
+    border-right: none;
+}
+
+#blockSeven,
+#blockEight,
+#blockNine{
+    border-bottom: none;
+}
+
+h1 {
+    text-align: center;
+    height: 100px;
+}
+
+h2{
+    text-align: left;
+    
+}
+
+footer {
+    text-align: center;
+}
